@@ -1,3 +1,15 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url('/assets/images/utils/background_2.png');
+  background-repeat: no-repeat;
+}
+
 .login-panel {
   min-width: 400px;
   max-width: 800px;
@@ -16,7 +28,7 @@
 
 
   .panel {
-    background-color: #2d5d7b;
+    background-color: #116466;
     color: #fff;
     padding: 20px;
     min-height: 400px;
@@ -51,10 +63,10 @@
       display: inline-block;
       vertical-align: top;
       text-align: center;
-      background-color: #ffeedd;
+      background-color: #D9B08C;
 
       i { 
-        color: black;
+        color: white;
         padding-top: 10px;
         font-size: 22px;
       }
@@ -82,10 +94,10 @@
 }
 
 button {
-  padding: 8px 4px;
+  padding: 8px 3px;
   height: 20px;
   border: none;
-  background-color: darkgray;
+  background-color: #2C3531;
   color: white;
 
   &:hover {
@@ -113,6 +125,7 @@ button {
   img {
     height: 80px;
     border-radius: 50%;
+    background-color: #116466;
   }
 }
   
@@ -120,4 +133,12 @@ hr {
   width: 102%;
   margin: 5px auto;
   margin-top: 30px;
+}
+
+.message {
+  width: 100%;
+  padding: 8px 3px;
+  margin: 5px 0px;
+  /* padding-right: 0px; */
+  background: #FB5F5F;
 }

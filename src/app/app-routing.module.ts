@@ -9,7 +9,12 @@ const routes: Routes = [
     path: '',
     component: PlainLayoutComponent,
     children: [{ path: 'login', component: LoginComponent, pathMatch: 'full'}]
-  }
+  },
+  {
+    path: '',
+    loadChildren: () =>
+      import('./modules/dashboard/index.module').then(m => m.DashboardModule)
+  },
 
 ];
 

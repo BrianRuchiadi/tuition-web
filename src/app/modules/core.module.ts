@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AuthModule } from './auth/index.module';
 import { AppRoutingModule } from '../app-routing.module';
@@ -12,10 +13,11 @@ import { PlainLayoutComponent } from '@components/layouts/plain/plain.component'
   imports: [
     CommonModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    AuthModule
+    AuthModule,
   ],
   exports: [AppRoutingModule],
   providers: []

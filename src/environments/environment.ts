@@ -3,8 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  env: 'local',
+  version: '1.0.0',
+  apiHost: 'api.local.education.com:4000',
+  streamHost: 'www.local.admin.sp0rtsb00k.com:10312',
+  socketHost: 'ws://api.local.admin.sp0rtsb00k.com:10313',
+  apiHostFeed: 'api.local.feed.sp0rtsb00k.com:10221',
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
